@@ -382,7 +382,7 @@ body::before {
     line-height: 1.2;
 }
 
-.hero-role {
+.hero-role { 
     font-size: var(--font-2xl);
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: var(--space-xl);
@@ -1534,4 +1534,11 @@ section {
   transform: translateY(20px);
   animation: fadeInUp .5s forwards;
 }
- 
+ .profile-image img.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* shift the focal point horizontally */
+object-position: 80% center;  /* 60% = move a bit to the right */
+  display: block;
+}
